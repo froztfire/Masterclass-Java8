@@ -1,5 +1,5 @@
 package section1.exercise1;
-public class Exec1FunctionalInterface {
+public class FunctionalInterface {
         interface Counter {
             abstract Integer count(String str);
         }
