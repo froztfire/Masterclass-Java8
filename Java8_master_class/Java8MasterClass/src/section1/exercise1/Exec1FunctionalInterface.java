@@ -1,5 +1,5 @@
-package lambda.exercise1;
-public class Exec1 {
+package section1.exercise1;
+public class Exec1FunctionalInterface {
         interface Counter {
             abstract Integer count(String str);
         }
