@@ -1,4 +1,4 @@
-package section1.exercise2;
+package java8.exercise2;
 
 import java.util.Arrays;
 

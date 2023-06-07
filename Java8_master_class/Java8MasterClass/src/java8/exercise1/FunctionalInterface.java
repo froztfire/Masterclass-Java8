@@ -1,4 +1,4 @@
-package section1.exercise1;
+package java8.exercise1;
 public class FunctionalInterface {
         interface Counter {
             abstract Integer count(String str);
