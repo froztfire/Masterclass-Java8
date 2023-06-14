@@ -4,6 +4,7 @@ import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
+//This program is to convert the Christmas Day from PH time zone equivalent to US time zone
 public class DateTimeManipulation {
     public static void main(String[] args) {
         ZoneId phTimeZone = ZoneId.of("Asia/Shanghai");
