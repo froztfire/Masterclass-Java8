@@ -49,7 +49,6 @@ public class SearchEmployeeAction implements CommandAction {
         int selectedOption =
                 InputHelper.askUserToSelect(
                         this.getClass(), OPTION_HEADER_CHOOSE_AN_ACTION, INSTRUCTION_SELECT_AN_ACTION);
-
         if (selectedOption == -1) {
             userSelectionState.getPreviousCommandAction().pop().doAction();
             return;
@@ -57,9 +56,7 @@ public class SearchEmployeeAction implements CommandAction {
 
         userSelectionState.getPreviousCommandAction().add(this);
         Supplier<List<Employee>> searchSupplier = searchesMap.get(selectedOption);
-
         displayEmployeesActionFunction.apply(searchSupplier.get()).doAction();
-
         userSelectionState.getPreviousCommandAction().pop().doAction();
     }
 

@@ -25,7 +25,6 @@ public class AddNewEmployeeAction implements CommandAction {
     @Override
     public void doAction() {
         int employeeNumber = InputHelper.askUserToProvideEmployeeNumber();
-
         String firstName = InputHelper.askUserToProvideInput(INSTRUCTION_FIRST_NAME);
         String lastName = InputHelper.askUserToProvideInput(INSTRUCTION_LAST_NAME);
         String middleName = InputHelper.askUserToProvideInput(INSTRUCTION_MIDDLE_NAME);
@@ -41,9 +40,7 @@ public class AddNewEmployeeAction implements CommandAction {
                         .build();
 
         employeeService.addEmployee(employee);
-
         displayNewlyAddedEmployeeActionFunction.apply(employee).doAction();
-
         userSelectionState.getPreviousCommandAction().pop().doAction();
     }
 }
